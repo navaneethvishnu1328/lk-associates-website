@@ -5,51 +5,55 @@ import { useEffect, useRef, useState, useCallback } from "react";
 const TESTIMONIALS = [
   {
     id: 1,
-    client: "Julian & Claire Sterling",
+    client: "Arun & Meera Nair",
     projectType: "Custom Residential Construction",
-    location: "Scottsdale, Arizona",
-    scope: "Ground-up 5,200 sq.ft private estate with cast-in-place concrete and cantilevered steel.",
+    location: "Cherthala, Alappuzha, Kerala",
+    scope:
+      "Complete residential house construction including structural work, masonry, electrical, plumbing, and finishing with a focus on quality and durability.",
     quote:
-      "From the initial BOQ to final handover, the financial transparency was extraordinary. Every material grade and inspection was documented with zero surprise costs. The structural precision in the concrete work and floor-to-ceiling glass integration exceeded every architectural drawing.",
-    verifiedBadge: "Verified Client • New Build Contract",
+      "We are really happy with how our house turned out. The team was cooperative throughout the construction and made sure everything was done properly. The quality of work, finishing, and attention to detail were impressive. They kept us informed at every stage, and the overall experience was smooth. Very happy with our new home.",
+    verifiedBadge: "Verified Client • Residential Construction",
     year: "Completed 2024",
-    initials: "JS",
+    initials: "AN",
   },
   {
     id: 2,
-    client: "Roberto & Elena Marchetti",
-    projectType: "Turnkey Historic Villa Renovation",
-    location: "Lake Como, Italy",
-    scope: "Structural restoration, seismic reinforcement, and contemporary interior overhaul.",
+    client: "Rahul & Anjali Menon",
+    projectType: "Residential Interior Design",
+    location: "Kakkanad, Ernakulam, Kerala",
+    scope:
+      "Complete home interior design and execution including modular kitchen, wardrobes, living room interiors, lighting, ceiling works, and customized storage solutions.",
     quote:
-      "Renovating a hillside stone villa requires exceptional engineering competence. The team preserved the original masonry while introducing modern hidden MEP systems and minimalist steel frameworks. Delivered on schedule despite complex topography.",
-    verifiedBadge: "Verified Client • Turnkey Renovation",
-    year: "Completed 2023",
+      "We approached them for our home interiors, and the result was really beautiful. They understood our ideas and suggested practical designs that suited our space perfectly. The finishing was neat, the materials were good, and the team was easy to coordinate with. Our home now feels much more comfortable and thoughtfully designed.",
+    verifiedBadge: "Verified Client • Interior Design",
+    year: "Completed 2024",
     initials: "RM",
   },
   {
     id: 3,
-    client: "Kenji & Saki Takahashi",
-    projectType: "Architectural Residence & Solarium",
-    location: "Kyoto, Japan",
-    scope: "Timber-frame hybrid residence with climate-regulated glass solarium.",
+    client: "Suresh & Lakshmi Pillai",
+    projectType: "Complete Residential Renovation",
+    location: "Tripunithura, Ernakulam, Kerala",
+    scope:
+      "Complete renovation of an existing residence including structural improvements, wall restoration, flooring replacement, electrical upgrades, space reorganization, and modern finishing.",
     quote:
-      "Their respect for architectural craft and strict adherence to the critical-path schedule was remarkable. We received weekly photographic milestone reports, and the final snag inspection was spotless on day one.",
-    verifiedBadge: "Verified Client • Custom House Build",
-    year: "Completed 2024",
-    initials: "KT",
+      "Our old house needed a complete renovation, and they did a wonderful job transforming it. The team managed the work really well and improved both the appearance and functionality of the house. They were approachable, understood our requirements, and paid attention to the small details. We are very satisfied with the overall work.",
+    verifiedBadge: "Verified Client • Home Renovation",
+    year: "Completed 2023",
+    initials: "SP",
   },
   {
     id: 4,
-    client: "Arthur & Vivienne Vance",
-    projectType: "Contract-Based Commercial Pavilion",
-    location: "Zurich, Switzerland",
-    scope: "High-spec multi-discipline studio and private architectural gallery.",
+    client: "Thomas & Susan Joseph",
+    projectType: "Building Refurbishment & Remodeling",
+    location: "Mararikulam, Alappuzha, Kerala",
+    scope:
+      "Building refurbishment and remodeling including exterior improvements, repainting, damaged area repairs, flooring upgrades, finishing works, and overall property appearance enhancement.",
     quote:
-      "Working with fixed turnkey contracts gave our investment board complete confidence. Their team managed zoning, structural engineering, and finish craftsmanship seamlessly without any administrative friction.",
-    verifiedBadge: "Verified Client • Commercial Contract",
+      "We had a very good experience with their refurbishment work. They gave our building a fresh look and handled the work with care and attention. The finishing was good, and the team was friendly and reliable throughout the project. Everything was completed as discussed, and we are happy with the final result.",
+    verifiedBadge: "Verified Client • Refurbishment Project",
     year: "Completed 2023",
-    initials: "AV",
+    initials: "TJ",
   },
 ];
 
@@ -66,7 +70,8 @@ export default function ClientTestimonials() {
   const total = TESTIMONIALS.length;
 
   useEffect(() => {
-    const isDesktop = typeof window !== "undefined" && window.innerWidth >= 1024;
+    const isDesktop =
+      typeof window !== "undefined" && window.innerWidth >= 1024;
 
     if (isDesktop) {
       // Desktop: preserve existing whole-section synchronized entrance
@@ -79,7 +84,7 @@ export default function ClientTestimonials() {
             observer.disconnect();
           }
         },
-        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+        { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
       );
 
       const el = sectionRef.current;
@@ -102,7 +107,7 @@ export default function ClientTestimonials() {
             }
           });
         },
-        { threshold: 0.12, rootMargin: "0px 0px -30px 0px" }
+        { threshold: 0.12, rootMargin: "0px 0px -30px 0px" },
       );
 
       if (headerRef.current) observer.observe(headerRef.current);
@@ -154,7 +159,9 @@ export default function ClientTestimonials() {
         <div
           ref={headerRef}
           className={`flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12 sm:mb-16 transition-all duration-700 ease-out ${
-            isVisible || headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            isVisible || headerVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-8"
           }`}
         >
           <div>
@@ -178,7 +185,9 @@ export default function ClientTestimonials() {
           {/* Navigation Controls */}
           <div className="flex items-center gap-3 self-start sm:self-end">
             <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400 mr-2">
-              <span className="text-zinc-900 dark:text-white font-bold">{currentIndex + 1}</span>
+              <span className="text-zinc-900 dark:text-white font-bold">
+                {currentIndex + 1}
+              </span>
               {" / "}
               <span>{total}</span>
             </span>
@@ -231,7 +240,9 @@ export default function ClientTestimonials() {
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
           className={`relative rounded-3xl p-7 sm:p-12 lg:p-16 bg-white/95 dark:bg-[#121215]/90 border border-black/[0.08] dark:border-white/[0.08] backdrop-blur-xl shadow-xl dark:shadow-2xl transition-all duration-700 ease-out ${
-            isVisible || cardVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            isVisible || cardVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
           }`}
         >
           {/* Subtle Watermark Quote Mark */}
@@ -306,4 +317,3 @@ export default function ClientTestimonials() {
     </section>
   );
 }
-

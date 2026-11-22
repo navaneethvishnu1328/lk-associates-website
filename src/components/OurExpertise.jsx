@@ -9,7 +9,7 @@ const SERVICES = [
     title: "Architecture & Design",
     description:
       "Translating raw topography and natural light into visionary spatial forms. From schematic concepts to fully realized blueprints that harmonize with their environment.",
-    image: "/frames/frame_045.jpg",
+    image: "/project01-webp/Warm Double-Height Living Room Interior.webp",
     colSpan: "sm:col-span-2 lg:col-span-7",
     minHeight: "min-h-[360px] sm:min-h-[390px] lg:min-h-[420px]",
     badge: "Principal Discipline",
@@ -20,7 +20,7 @@ const SERVICES = [
     title: "Residential Construction",
     description:
       "Engineering bespoke private estates with artisanal precision, sustainable materials, and uncompromising structural integrity built to endure generations.",
-    image: "/frames/frame_125.jpg",
+    image: "/project01-webp/Twilight Modern Villa with Warm Glow.webp",
     colSpan: "sm:col-span-1 lg:col-span-5",
     minHeight: "min-h-[360px] sm:min-h-[390px] lg:min-h-[420px]",
     badge: "Turnkey Estates",
@@ -31,7 +31,7 @@ const SERVICES = [
     title: "Commercial Buildings",
     description:
       "Designing progressive commercial headquarters, pavilions, and mixed-use structures tailored for collaborative energy and operational excellence.",
-    image: "/frames/frame_215.jpg",
+    image: "/project01-webp/Warm Modern Dining and Kitchen Interior.webp",
     colSpan: "sm:col-span-1 lg:col-span-4",
     minHeight: "min-h-[340px] sm:min-h-[390px] lg:min-h-[380px]",
     badge: "Urban Architecture",
@@ -42,7 +42,7 @@ const SERVICES = [
     title: "Interior Design",
     description:
       "Curating tactile interior volumes with bespoke millwork, concealed illumination, and timeless material palettes that evoke quiet serenity.",
-    image: "/frames/frame_295.jpg",
+    image: "/project01-webp/Warm Contemporary Dining and Kitchen Interior.webp",
     colSpan: "sm:col-span-1 lg:col-span-4",
     minHeight: "min-h-[340px] sm:min-h-[390px] lg:min-h-[380px]",
     badge: "Atmosphere & Detail",
@@ -53,7 +53,7 @@ const SERVICES = [
     title: "Renovation",
     description:
       "Reimagining historic structures through surgical modern interventions, revitalizing architectural heritage with contemporary spatial clarity.",
-    image: "/frames/frame_345.jpg",
+    image: "/project01-webp/Warm Modern Home Bar and Kitchen.webp",
     colSpan: "sm:col-span-1 lg:col-span-4",
     minHeight: "min-h-[340px] sm:min-h-[390px] lg:min-h-[380px]",
     badge: "Heritage Revitalization",

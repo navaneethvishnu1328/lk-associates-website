@@ -597,7 +597,7 @@ export default function ScrollFrameExperience() {
         {/* Scroll To Explore Indicator: precisely centered in viewport on desktop and mobile */}
         <div
           ref={scrollIndicatorRef}
-          className="absolute bottom-6 sm:bottom-8 lg:bottom-10 inset-x-0 mx-auto w-fit z-30 flex flex-col items-center gap-1.5 sm:gap-2 select-none cursor-pointer group pointer-events-auto transition-colors duration-300 will-change-transform rounded-full px-4 py-1.5 focus:outline-none focus-visible:ring-1 focus-visible:ring-[#D4AF37]"
+          className="absolute bottom-16 sm:bottom-8 lg:bottom-10 inset-x-0 mx-auto w-fit z-30 flex flex-col items-center gap-1.5 sm:gap-2 select-none cursor-pointer group pointer-events-auto transition-colors duration-300 will-change-transform rounded-full px-4 py-1.5 focus:outline-none focus-visible:ring-1 focus-visible:ring-[#D4AF37]"
           style={{
             transform: "translate3d(0, 0, 0)",
             opacity: 1,

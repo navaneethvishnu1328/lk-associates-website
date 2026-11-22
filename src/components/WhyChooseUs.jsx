@@ -204,7 +204,7 @@ export default function WhyChooseUs() {
             <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/frames/frame_128.jpg"
+                src="/project01-webp/Modern Tropical Double-Height Living Space.webp"
                 alt="Quality Construction Workmanship"
                 width={600}
                 height={360}
